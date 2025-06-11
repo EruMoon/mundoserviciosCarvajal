@@ -4,7 +4,7 @@ import AdminUserTable from "../../components/AdminUserTable";
 import AdminEditUserModal from "../../components/AdminEditUserModal";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
-import senaLogo from "../../assets/logofarmacenter.jpg";
+import msc from "../../assets/msc-logo.png";
 
 const UserList = () => {
   const [usuarios, setUsuarios] = useState([]);
@@ -96,7 +96,7 @@ const UserList = () => {
     <div className="min-h-screen bg-gray-100 p-4">
       {/* Cabecera centrada y responsive */}
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-6 mb-6 flex flex-col items-center text-center">
-        <img src={senaLogo} alt="Farmacenter Logo" className="h-20 mb-4" />
+        <img src={msc} alt="Farmacenter Logo" className="h-20 mb-4" />
         <h1 className="text-2xl sm:text-3xl font-bold text-[#0056A6]">
           Gestión de Usuarios
         </h1>

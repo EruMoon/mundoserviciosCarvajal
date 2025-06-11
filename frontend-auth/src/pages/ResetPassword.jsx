@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import senaLogo from "../assets/logofarmacenter.jpg";
+import msc from "../assets/msc-logo.png";
 
 const ResetPassword = () => {
   const { token } = useParams();
@@ -37,13 +37,13 @@ const ResetPassword = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0056A6] flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen bg-[#02225f] flex flex-col items-center justify-center px-4">
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
         {/* Logo SENA */}
         <div className="flex justify-center mb-6">
-          <img src={senaLogo} alt="SENA Logo" className="h-12" />
+          <img src={msc} alt="msc-logo" className="h-21" />
         </div>
-        <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
+        <h2 className="text-2xl font-bold text-center mb-6 text-[#ffc800]">
           Restablecer Contraseña
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -85,7 +85,7 @@ const ResetPassword = () => {
 
           <button
             type="submit"
-            className="w-full bg-[#0056A6]-600 text-white px-4 py-2 rounded-md hover:bg-[#0056A6]-700 transition"
+            className="w-full bg-blue-900 text-white px-4 py-2 rounded-md hover:text-[#ffc800] hover:bg-blue-950 transition"
           >
             Guardar nueva contraseña
           </button>

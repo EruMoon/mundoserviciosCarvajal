@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import AdminProductsTable from "../../components/AdminProductsTable";
 import AdminEditProductsModal from "../../components/AdminEditProductsModal";
-import senaLogo from "../../assets/logofarmacenter.jpg";
+import msc from "../../assets/msc-logo.png";
 
 const Productos = () => {
   const [productos, setProductos] = useState([]);
@@ -140,7 +140,7 @@ const Productos = () => {
     <div className="min-h-screen bg-gray-100 p-4">
       {/* Cabecera */}
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-6 mb-6 flex items-center">
-        <img src={senaLogo} alt="SENA Logo" className="h-10 mr-4" />
+        <img src={msc} alt="SENA Logo" className="h-15 mr-4" />
         <h1 className="text-2xl font-bold text-[#0056A6]-700">
           Gestión de Productos
         </h1>

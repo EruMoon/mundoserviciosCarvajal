@@ -121,7 +121,7 @@ const Login = () => {
             </Link>
           </span>
           <Link to="/" className="font-semibold hover:text-[#ffc800] transition">
-            Volver al Farmacenter
+            Volver al inicio
           </Link>
         </div>
       </div>
