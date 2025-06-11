@@ -50,7 +50,7 @@ const Sidebar = ({ user: propUser, onLogout, menuOpen, setMenuOpen }) => {
         {/* Logo y título */}
         <div className="p-4 flex items-center justify-between bg-[#0056A]">
           <div className="flex items-center">
-            <img src={msc} alt="SENA Logo" className="h-20 mr-2" />
+            <img src={msc} alt="msc-logo" className="h-20 mr-2" />
           </div>
           <button
             className="md:hidden text-[#0056A]"
