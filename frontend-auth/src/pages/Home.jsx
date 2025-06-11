@@ -30,6 +30,7 @@ const Home = () => {
   const cerrarSesion = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("token");
+    setUser(null);
     navigate("/");
   };
 
