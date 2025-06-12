@@ -43,7 +43,7 @@ const Checkout = () => {
         payload
       );
 
-      toast.success(`Pedido ${data.order.codigo} creado!`);
+      toast.success(`Pedido creado!`);
       clearCart();
       navigate("/pedidos");
     } catch (err) {

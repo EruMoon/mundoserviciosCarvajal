@@ -4,6 +4,8 @@ import axios from "axios";
 import ProductModal from "./ProductModal";
 import { FaSyringe, FaTimes } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 const ProductGallery = ({ openSidebar }) => {
   const [productos, setProductos] = useState([]);
@@ -120,19 +122,19 @@ const ProductGallery = ({ openSidebar }) => {
           <button
             onClick={() => setPage((p) => Math.max(p - 1, 1))}
             disabled={page === 1}
-            className="px-4 py-2 rounded-lg border bg-blue-600 text-white hover:bg-blue-700 disabled:bg-gray-200 disabled:text-gray-500"
+            className="px-4 py-2 rounded-lg border-2 bg-blue-950 text-white hover:text-[#ffc800] hover:bg-blue-950 disabled:bg-gray-200 disabled:text-gray-500"
           >
-            Anterior
+            <MdKeyboardDoubleArrowLeft />
           </button>
-          <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg">
-            Página {page}
+          <span className="px-4 py-2 bg-blue-950 text-white rounded-lg">
+            {page}
           </span>
           <button
             onClick={() => hasMore && setPage((p) => p + 1)}
             disabled={!hasMore}
-            className="px-4 py-2 rounded-lg border bg-blue-600 text-white hover:bg-blue-700 disabled:bg-gray-200 disabled:text-gray-500"
+            className="px-4 py-2 rounded-lg border-2 bg-blue-950 text-white hover:text-[#ffc800] hover:bg-blue-950 disabled:bg-gray-200 disabled:text-gray-500"
           >
-            Siguiente
+            <MdKeyboardDoubleArrowRight />
           </button>
         </div>
       )}
