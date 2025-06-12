@@ -78,9 +78,10 @@ export const createOrder = async (req, res) => {
       </ul>
       <p><strong>Total:</strong> $${total.toFixed(2)}</p>
       <p><strong>Código de tu pedido:</strong> <h2>${codigoPedido}</h2></p>
-      <p>Presenta este código en la farmacia para recoger tu medicamento.</p>
+      <p>Presenta este código en nuestro punto fisico para hacer la entrega del Producto.</p>
+      <p>Direccion: Cra 8 # 5-50 Garzon, Huila</p>
     `;
-    await sendEmail(user.correo, "Tu pedido en Farmacenter", html);
+    await sendEmail(user.correo, "Tu pedido en MSC", html);
 
     // Responder al cliente
     return res.status(201).json({
@@ -166,7 +167,7 @@ export const deliverOrder = async (req, res) => {
     const html = `
       <h1>Hola ${order.user.nombre},</h1>
       <p>Tu pedido <strong>${order.codigoRecogida}</strong> ha sido entregado.</p>
-      <p>¡Gracias por confiar en Farmacenter!</p>
+      <p>¡Gracias por confiar en MSC!</p>
     `;
     await sendEmail(order.user.correo, "Pedido Entregado", html);
 

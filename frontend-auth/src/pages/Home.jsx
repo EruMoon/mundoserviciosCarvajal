@@ -82,21 +82,21 @@ const Home = () => {
                 {user.rol === "admin" ? (
                   <Link
                     to="/admin"
-                    className="px-4 py-2 border-2 border-white rounded-full text-sm hover:bg-white hover:text-[#F36F21] transition"
+                    className="px-4 py-2 border-2 border-black rounded-full text-sm hover:bg-black hover:text-[#ffc800] transition"
                   >
                     Panel Admin
                   </Link>
                 ) : (
                   <Link
                     to="/dashboard"
-                    className="px-4 py-2 border-2 border-white rounded-full text-sm hover:bg-white hover:text-[#F36F21] transition"
+                    className="px-4 py-2 border-2 border-black rounded-full text-sm hover:bg-black hover:text-[#ffc800] transition"
                   >
                     Mi Panel
                   </Link>
                 )}
                 <button
                   onClick={cerrarSesion}
-                  className="px-4 py-2 border-2 border-white rounded-full text-sm hover:bg-white hover:text-[#F36F21] transition"
+                  className="px-4 py-2 border-2 border-black rounded-full text-sm hover:bg-black hover:text-[#ffc800] transition"
                 >
                   Cerrar sesión
                 </button>

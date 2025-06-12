@@ -24,7 +24,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 left-6 z-50 bg-white p-3 rounded-full shadow-lg hover:bg-blue-100 transition-all duration-300"
+      className="fixed bottom-2 left-6 z-50 bg-white p-3 rounded-full shadow-lg hover:bg-blue-200 transition-all duration-300"
       aria-label="Subir al inicio"
     >
       <ChevronUp size={24} className="text-[#0056A6]" />
